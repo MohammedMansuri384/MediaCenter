@@ -1,0 +1,1966 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ECBME Dept. Ryerson University Flex license: MDK Professional 5.31 (Flex): 200 user(s) (mdk_pro) Operation stops: 4 Jul 2027
+ 
+Tool Versions:
+Toolchain:       MDK Professional 5.31 (Flex): 200 user(s)  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.4.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+S:\COE718\Final Project\MediaProject.uvprojx
+Project File Date:  11/16/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling system_LPC17xx.c...
+system_LPC17xx.c(27): warning: In file included from...
+./LPC17xx.h(103): warning: In file included from...
+U:/coe718/project/common/inc\core_cm3.h(1327): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+system_LPC17xx.c(27): warning: In file included from...
+./LPC17xx.h(197): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(201): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(195): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(211): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(215): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(209): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(224): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(228): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(222): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(237): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(241): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(235): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(250): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(254): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(248): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(336): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(342): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(346): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(367): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(373): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(377): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(826): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(836): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(840): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+system_LPC17xx.c(437): warning: no previous extern declaration for non-static variable 'SystemCoreClock' [-Wmissing-variable-declarations]
+uint32_t SystemCoreClock = __CORE_CLK;/*!< System Clock Frequency (Core Clock)*/
+         ^
+system_LPC17xx.c(437): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t SystemCoreClock = __CORE_CLK;/*!< System Clock Frequency (Core Clock)*/
+^
+system_LPC17xx.c(456): warning: no previous prototype for function 'SystemCoreClockUpdate' [-Wmissing-prototypes]
+ */void SystemCoreClockUpdate (void)            /* Get Core Clock Frequency      */
+        ^
+system_LPC17xx.c(456): note: declare 'static' if the function is not intended to be used outside of this translation unit
+ */void SystemCoreClockUpdate (void)            /* Get Core Clock Frequency      */
+   ^
+   static 
+system_LPC17xx.c(564): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  LPC_SC->FLASHCFG  = (LPC_SC->FLASHCFG & ~0x0000F000) | FLASHCFG_Val;
+                                        ~ ^~~~~~~~~~~
+28 warnings generated.
+compiling brick_breaker.c...
+brick_breaker.c(1): warning: non-portable path to file '<LPC17xx.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include <LPC17xx.H>
+         ^~~~~~~~~~~
+         <LPC17xx.h>
+brick_breaker.c(1): warning: In file included from...
+U:/coe718/project/common/inc\LPC17xx.H(104): warning: In file included from...
+U:/coe718/project/common/inc/core_cm3.h(1327): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+brick_breaker.c(1): warning: In file included from...
+U:/coe718/project/common/inc/LPC17xx.h(199): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(203): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(197): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(213): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(217): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(211): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(226): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(230): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(224): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(239): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(243): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(237): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(252): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(256): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(250): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(343): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(347): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(366): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(371): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(375): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(802): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(812): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(816): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+brick_breaker.c(3): warning: In file included from...
+./KBD.h(17): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+brick_breaker.c(28): warning: padding size of 'Brick' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct{
+        ^
+brick_breaker.c(57): warning: no previous extern declaration for non-static variable 'r' [-Wmissing-variable-declarations]
+int r=0;  
+    ^
+brick_breaker.c(57): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int r=0;  
+^
+brick_breaker.c(58): warning: no previous extern declaration for non-static variable 'c' [-Wmissing-variable-declarations]
+int c=0;
+    ^
+brick_breaker.c(58): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int c=0;
+^
+brick_breaker.c(13): warning: padding size of 'Paddle' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct{
+        ^
+brick_breaker.c(20): warning: padding size of 'Ball' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct{
+        ^
+brick_breaker.c(60): warning: no previous prototype for function 'game_init' [-Wmissing-prototypes]
+void game_init(void){
+     ^
+brick_breaker.c(60): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void game_init(void){
+^
+static 
+brick_breaker.c(95): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(paddle.x,paddle.y,paddle.w,paddle.h,paddle.color);
+        ~~~~~~~~~~~~~ ~~~~~~~^
+brick_breaker.c(95): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(paddle.x,paddle.y,paddle.w,paddle.h,paddle.color);
+        ~~~~~~~~~~~~~          ~~~~~~~^
+brick_breaker.c(95): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(paddle.x,paddle.y,paddle.w,paddle.h,paddle.color);
+        ~~~~~~~~~~~~~                   ~~~~~~~^
+brick_breaker.c(95): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(paddle.x,paddle.y,paddle.w,paddle.h,paddle.color);
+        ~~~~~~~~~~~~~                            ~~~~~~~^
+brick_breaker.c(96): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(ball.x,ball.y,ball.size,ball.size,ball.color);
+        ~~~~~~~~~~~~~ ~~~~~^
+brick_breaker.c(96): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(ball.x,ball.y,ball.size,ball.size,ball.color);
+        ~~~~~~~~~~~~~        ~~~~~^
+brick_breaker.c(96): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(ball.x,ball.y,ball.size,ball.size,ball.color);
+        ~~~~~~~~~~~~~               ~~~~~^~~~
+brick_breaker.c(96): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(ball.x,ball.y,ball.size,ball.size,ball.color);
+        ~~~~~~~~~~~~~                         ~~~~~^~~~
+brick_breaker.c(101): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GLCD_FillRect(bricks[r][c].x, bricks[r][c].y, 
+                ~~~~~~~~~~~~~ ~~~~~~~~~~~~~^
+brick_breaker.c(101): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GLCD_FillRect(bricks[r][c].x, bricks[r][c].y, 
+                ~~~~~~~~~~~~~                 ~~~~~~~~~~~~~^
+brick_breaker.c(102): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                              bricks[r][c].w, bricks[r][c].h, 
+                              ~~~~~~~~~~~~~^
+brick_breaker.c(102): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                              bricks[r][c].w, bricks[r][c].h, 
+                                              ~~~~~~~~~~~~~^
+brick_breaker.c(93): warning: no previous prototype for function 'game_draw' [-Wmissing-prototypes]
+void game_draw(void){
+     ^
+brick_breaker.c(93): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void game_draw(void){
+^
+static 
+brick_breaker.c(109): warning: no previous prototype for function 'check_collision' [-Wmissing-prototypes]
+int check_collision(int x1,int y1, int w1, int h1, int x2, int y2, int w2, int h2){
+    ^
+brick_breaker.c(109): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int check_collision(int x1,int y1, int w1, int h1, int x2, int y2, int w2, int h2){
+^
+static 
+brick_breaker.c(121): error: use of undeclared identifier 'SystemCoreClock'
+        SysTick_Config(SystemCoreClock/100);
+                       ^
+brick_breaker.c(126): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+                                joystick_val = get_button();
+                                             ~ ^~~~~~~~~~~~
+brick_breaker.c(173): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                            GLCD_FillRect(bricks[r][c].x, bricks[r][c].y, 
+                            ~~~~~~~~~~~~~ ~~~~~~~~~~~~~^
+brick_breaker.c(173): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                            GLCD_FillRect(bricks[r][c].x, bricks[r][c].y, 
+                            ~~~~~~~~~~~~~                 ~~~~~~~~~~~~~^
+brick_breaker.c(174): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                          bricks[r][c].w, bricks[r][c].h, 
+                                          ~~~~~~~~~~~~~^
+brick_breaker.c(174): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                          bricks[r][c].w, bricks[r][c].h, 
+                                                          ~~~~~~~~~~~~~^
+brick_breaker.c(186): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(paddle.old_x, paddle.y, paddle.w, paddle.h, Black);
+                                        ~~~~~~~~~~~~~ ~~~~~~~^~~~~
+brick_breaker.c(186): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(paddle.old_x, paddle.y, paddle.w, paddle.h, Black);
+                                        ~~~~~~~~~~~~~               ~~~~~~~^
+brick_breaker.c(186): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(paddle.old_x, paddle.y, paddle.w, paddle.h, Black);
+                                        ~~~~~~~~~~~~~                         ~~~~~~~^
+brick_breaker.c(186): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(paddle.old_x, paddle.y, paddle.w, paddle.h, Black);
+                                        ~~~~~~~~~~~~~                                   ~~~~~~~^
+brick_breaker.c(188): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(paddle.x, paddle.y, paddle.w, paddle.h, paddle.color);
+                                        ~~~~~~~~~~~~~ ~~~~~~~^
+brick_breaker.c(188): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(paddle.x, paddle.y, paddle.w, paddle.h, paddle.color);
+                                        ~~~~~~~~~~~~~           ~~~~~~~^
+brick_breaker.c(188): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(paddle.x, paddle.y, paddle.w, paddle.h, paddle.color);
+                                        ~~~~~~~~~~~~~                     ~~~~~~~^
+brick_breaker.c(188): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(paddle.x, paddle.y, paddle.w, paddle.h, paddle.color);
+                                        ~~~~~~~~~~~~~                               ~~~~~~~^
+brick_breaker.c(190): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(ball.old_x, ball.old_y, ball.size, ball.size, Black);
+                                        ~~~~~~~~~~~~~ ~~~~~^~~~~
+brick_breaker.c(190): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(ball.old_x, ball.old_y, ball.size, ball.size, Black);
+                                        ~~~~~~~~~~~~~             ~~~~~^~~~~
+brick_breaker.c(190): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(ball.old_x, ball.old_y, ball.size, ball.size, Black);
+                                        ~~~~~~~~~~~~~                         ~~~~~^~~~
+brick_breaker.c(190): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(ball.old_x, ball.old_y, ball.size, ball.size, Black);
+                                        ~~~~~~~~~~~~~                                    ~~~~~^~~~
+brick_breaker.c(192): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(ball.x, ball.y, ball.size, ball.size, ball.color);
+                                        ~~~~~~~~~~~~~ ~~~~~^
+brick_breaker.c(192): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(ball.x, ball.y, ball.size, ball.size, ball.color);
+                                        ~~~~~~~~~~~~~         ~~~~~^
+brick_breaker.c(192): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(ball.x, ball.y, ball.size, ball.size, ball.color);
+                                        ~~~~~~~~~~~~~                 ~~~~~^~~~
+brick_breaker.c(192): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GLCD_FillRect(ball.x, ball.y, ball.size, ball.size, ball.color);
+                                        ~~~~~~~~~~~~~                            ~~~~~^~~~
+brick_breaker.c(200): warning: passing 'char [8]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(4,8,1, "YOU WIN");
+                                                                  ^~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+brick_breaker.c(201): warning: passing 'char [16]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(6,1,1, "Play Again (UP)");
+                                                                  ^~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+brick_breaker.c(202): warning: passing 'char [17]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(7,1,1, "Main Menu (Left)");
+                                                                  ^~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+brick_breaker.c(204): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+                                                joystick_val = get_button();
+                                                             ~ ^~~~~~~~~~~~
+brick_breaker.c(219): warning: passing 'char [10]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(4,7,1, "GAME OVER");
+                                                                  ^~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+brick_breaker.c(220): warning: passing 'char [16]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(6,1,1, "Play Again (UP)");
+                                                                  ^~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+brick_breaker.c(221): warning: passing 'char [17]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(7,1,1, "Main Menu (Left)");
+                                                                  ^~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+brick_breaker.c(223): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+                                                joystick_val = get_button();
+                                                             ~ ^~~~~~~~~~~~
+brick_breaker.c(116): warning: no previous prototype for function 'brick_breaker' [-Wmissing-prototypes]
+int brick_breaker(void){
+    ^
+brick_breaker.c(116): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int brick_breaker(void){
+^
+static 
+brick_breaker.c(51): warning: no previous extern declaration for non-static variable 'paddle' [-Wmissing-variable-declarations]
+Paddle paddle;
+       ^
+brick_breaker.c(51): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+Paddle paddle;
+^
+brick_breaker.c(52): warning: no previous extern declaration for non-static variable 'ball' [-Wmissing-variable-declarations]
+Ball ball;
+     ^
+brick_breaker.c(52): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+Ball ball;
+^
+brick_breaker.c(53): warning: no previous extern declaration for non-static variable 'bricks' [-Wmissing-variable-declarations]
+Brick bricks[NUM_BRICK_ROWS][NUM_BRICK_COLS];
+      ^
+brick_breaker.c(53): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+Brick bricks[NUM_BRICK_ROWS][NUM_BRICK_COLS];
+^
+brick_breaker.c(54): warning: no previous extern declaration for non-static variable 'bricks_remaining' [-Wmissing-variable-declarations]
+int bricks_remaining;
+    ^
+brick_breaker.c(54): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int bricks_remaining;
+^
+brick_breaker.c(55): warning: no previous extern declaration for non-static variable 'current_state' [-Wmissing-variable-declarations]
+enum GameState current_state;
+               ^
+brick_breaker.c(55): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+enum GameState current_state;
+^
+82 warnings and 1 error generated.
+compiling flappy_bird.c...
+flappy_bird.c(1): warning: non-portable path to file '<LPC17xx.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include <LPC17xx.H>
+         ^~~~~~~~~~~
+         <LPC17xx.h>
+flappy_bird.c(1): warning: In file included from...
+U:/coe718/project/common/inc\LPC17xx.H(104): warning: In file included from...
+U:/coe718/project/common/inc/core_cm3.h(1327): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+flappy_bird.c(1): warning: In file included from...
+U:/coe718/project/common/inc/LPC17xx.h(199): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(203): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(197): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(213): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(217): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(211): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(226): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(230): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(224): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(239): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(243): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(237): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(252): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(256): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(250): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(343): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(347): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(366): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(371): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(375): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(802): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(812): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(816): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+flappy_bird.c(5): warning: In file included from...
+./KBD.h(17): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+flappy_bird.c(32): warning: no previous extern declaration for non-static variable 'i' [-Wmissing-variable-declarations]
+int i=0;
+    ^
+flappy_bird.c(32): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int i=0;
+^
+flappy_bird.c(17): warning: padding size of 'Pipe' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct {
+        ^
+flappy_bird.c(57): warning: declaration shadows a variable in the global scope [-Wshadow]
+void randomize_gap(int i){
+                       ^
+flappy_bird.c(32): note: previous declaration is here
+int i=0;
+    ^
+flappy_bird.c(57): warning: no previous prototype for function 'randomize_gap' [-Wmissing-prototypes]
+void randomize_gap(int i){
+     ^
+flappy_bird.c(57): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void randomize_gap(int i){
+^
+static 
+flappy_bird.c(9): warning: padding size of 'Player' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct{
+        ^
+flappy_bird.c(66): warning: no previous prototype for function 'game_init_bird' [-Wmissing-prototypes]
+void game_init_bird(void){
+     ^
+flappy_bird.c(66): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void game_init_bird(void){
+^
+static 
+flappy_bird.c(91): warning: passing 'char [17]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        GLCD_DisplayString(4,4,1, "Flappy Rectangle");
+                                  ^~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+flappy_bird.c(92): warning: passing 'char [18]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        GLCD_DisplayString(7,3,1, "Press Up to Begin");
+                                  ^~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+flappy_bird.c(93): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(player.x,player.y,player.w,player.h,player.color);
+        ~~~~~~~~~~~~~ ~~~~~~~^
+flappy_bird.c(93): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(player.x,player.y,player.w,player.h,player.color);
+        ~~~~~~~~~~~~~          ~~~~~~~^
+flappy_bird.c(93): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(player.x,player.y,player.w,player.h,player.color);
+        ~~~~~~~~~~~~~                   ~~~~~~~^
+flappy_bird.c(93): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(player.x,player.y,player.w,player.h,player.color);
+        ~~~~~~~~~~~~~                            ~~~~~~~^
+flappy_bird.c(87): warning: no previous prototype for function 'game_start' [-Wmissing-prototypes]
+void game_start(void){
+     ^
+flappy_bird.c(87): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void game_start(void){
+^
+static 
+flappy_bird.c(96): warning: declaration shadows a variable in the global scope [-Wshadow]
+void draw_pipe(int i, unsigned short color){
+                   ^
+flappy_bird.c(32): note: previous declaration is here
+int i=0;
+    ^
+flappy_bird.c(99): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(pipes[i].x, 0, pipes[i].w, pipes[i].gap_y, color);
+        ~~~~~~~~~~~~~ ~~~~~~~~~^
+flappy_bird.c(99): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(pipes[i].x, 0, pipes[i].w, pipes[i].gap_y, color);
+        ~~~~~~~~~~~~~                ~~~~~~~~~^
+flappy_bird.c(99): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GLCD_FillRect(pipes[i].x, 0, pipes[i].w, pipes[i].gap_y, color);
+        ~~~~~~~~~~~~~                            ~~~~~~~~~^~~~~
+flappy_bird.c(100): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GLCD_FillRect(pipes[i].x, bot_rect_y, pipes[i].w, bot_rect_h, color);
+    ~~~~~~~~~~~~~ ~~~~~~~~~^
+flappy_bird.c(100): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GLCD_FillRect(pipes[i].x, bot_rect_y, pipes[i].w, bot_rect_h, color);
+    ~~~~~~~~~~~~~             ^~~~~~~~~~
+flappy_bird.c(100): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GLCD_FillRect(pipes[i].x, bot_rect_y, pipes[i].w, bot_rect_h, color);
+    ~~~~~~~~~~~~~                         ~~~~~~~~~^
+flappy_bird.c(100): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GLCD_FillRect(pipes[i].x, bot_rect_y, pipes[i].w, bot_rect_h, color);
+    ~~~~~~~~~~~~~                                     ^~~~~~~~~~
+flappy_bird.c(96): warning: no previous prototype for function 'draw_pipe' [-Wmissing-prototypes]
+void draw_pipe(int i, unsigned short color){
+     ^
+flappy_bird.c(96): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void draw_pipe(int i, unsigned short color){
+^
+static 
+flappy_bird.c(112): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+                joystick_val=get_button();
+                            ~^~~~~~~~~~~~
+flappy_bird.c(178): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                GLCD_FillRect(player.x,player.old_y,player.w,player.h,White);
+                                ~~~~~~~~~~~~~ ~~~~~~~^
+flappy_bird.c(178): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                GLCD_FillRect(player.x,player.old_y,player.w,player.h,White);
+                                ~~~~~~~~~~~~~          ~~~~~~~^~~~~
+flappy_bird.c(178): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                GLCD_FillRect(player.x,player.old_y,player.w,player.h,White);
+                                ~~~~~~~~~~~~~                       ~~~~~~~^
+flappy_bird.c(178): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                GLCD_FillRect(player.x,player.old_y,player.w,player.h,White);
+                                ~~~~~~~~~~~~~                                ~~~~~~~^
+flappy_bird.c(179): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                GLCD_FillRect(player.x,player.y,player.w,player.h,player.color);
+                                ~~~~~~~~~~~~~ ~~~~~~~^
+flappy_bird.c(179): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                GLCD_FillRect(player.x,player.y,player.w,player.h,player.color);
+                                ~~~~~~~~~~~~~          ~~~~~~~^
+flappy_bird.c(179): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                GLCD_FillRect(player.x,player.y,player.w,player.h,player.color);
+                                ~~~~~~~~~~~~~                   ~~~~~~~^
+flappy_bird.c(179): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                GLCD_FillRect(player.x,player.y,player.w,player.h,player.color);
+                                ~~~~~~~~~~~~~                            ~~~~~~~^
+flappy_bird.c(183): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                                                        GLCD_FillRect(pipes[i].old_x, 0, pipes[i].w, pipes[i].gap_y, White);
+                                                                        ~~~~~~~~~~~~~ ~~~~~~~~~^~~~~
+flappy_bird.c(183): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                                                        GLCD_FillRect(pipes[i].old_x, 0, pipes[i].w, pipes[i].gap_y, White);
+                                                                        ~~~~~~~~~~~~~                    ~~~~~~~~~^
+flappy_bird.c(183): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                                                        GLCD_FillRect(pipes[i].old_x, 0, pipes[i].w, pipes[i].gap_y, White);
+                                                                        ~~~~~~~~~~~~~                                ~~~~~~~~~^~~~~
+flappy_bird.c(185): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                    GLCD_FillRect(pipes[i].old_x, bot_y, pipes[i].w, SCREEN_HEIGHT - bot_y, White);
+                    ~~~~~~~~~~~~~ ~~~~~~~~~^~~~~
+flappy_bird.c(185): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                    GLCD_FillRect(pipes[i].old_x, bot_y, pipes[i].w, SCREEN_HEIGHT - bot_y, White);
+                    ~~~~~~~~~~~~~                 ^~~~~
+flappy_bird.c(185): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                    GLCD_FillRect(pipes[i].old_x, bot_y, pipes[i].w, SCREEN_HEIGHT - bot_y, White);
+                    ~~~~~~~~~~~~~                        ~~~~~~~~~^
+flappy_bird.c(185): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                    GLCD_FillRect(pipes[i].old_x, bot_y, pipes[i].w, SCREEN_HEIGHT - bot_y, White);
+                    ~~~~~~~~~~~~~                                    ~~~~~~~~~~~~~~^~~~~~~
+flappy_bird.c(198): warning: passing 'char [10]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                GLCD_DisplayString(4,7,1, "GAME OVER");
+                                                          ^~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+flappy_bird.c(202): warning: passing 'char [16]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                GLCD_DisplayString(7,1,1, "Play Again (UP)");
+                                                          ^~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+flappy_bird.c(203): warning: passing 'char [17]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                GLCD_DisplayString(8,1,1, "Main Menu (LEFT)");
+                                                          ^~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+flappy_bird.c(205): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+                                        joystick_val=get_button();
+                                                    ~^~~~~~~~~~~~
+flappy_bird.c(103): warning: no previous prototype for function 'flappy_bird' [-Wmissing-prototypes]
+int flappy_bird(void){
+    ^
+flappy_bird.c(103): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int flappy_bird(void){
+^
+static 
+flappy_bird.c(51): warning: no previous extern declaration for non-static variable 'player' [-Wmissing-variable-declarations]
+Player player;
+       ^
+flappy_bird.c(51): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+Player player;
+^
+flappy_bird.c(52): warning: no previous extern declaration for non-static variable 'pipes' [-Wmissing-variable-declarations]
+Pipe pipes[NUM_PIPES];
+     ^
+flappy_bird.c(52): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+Pipe pipes[NUM_PIPES];
+^
+flappy_bird.c(53): warning: no previous extern declaration for non-static variable 'score' [-Wmissing-variable-declarations]
+int score;
+    ^
+flappy_bird.c(53): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int score;
+^
+flappy_bird.c(54): warning: no previous extern declaration for non-static variable 'current_state_bird' [-Wmissing-variable-declarations]
+enum GameState current_state_bird;
+               ^
+flappy_bird.c(54): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+enum GameState current_state_bird;
+^
+flappy_bird.c(55): warning: no previous extern declaration for non-static variable 'score_str' [-Wmissing-variable-declarations]
+char score_str[20];
+     ^
+flappy_bird.c(55): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char score_str[20];
+^
+75 warnings generated.
+compiling game_menu.c...
+game_menu.c(1): warning: non-portable path to file '<LPC17xx.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include <LPC17xx.H>
+         ^~~~~~~~~~~
+         <LPC17xx.h>
+game_menu.c(1): warning: In file included from...
+U:/coe718/project/common/inc\LPC17xx.H(104): warning: In file included from...
+U:/coe718/project/common/inc/core_cm3.h(1327): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+game_menu.c(1): warning: In file included from...
+U:/coe718/project/common/inc/LPC17xx.h(199): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(203): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(197): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(213): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(217): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(211): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(226): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(230): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(224): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(239): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(243): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(237): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(252): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(256): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(250): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(343): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(347): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(366): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(371): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(375): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(802): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(812): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(816): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+game_menu.c(5): warning: In file included from...
+./KBD.h(17): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+game_menu.c(13): warning: passing 'char [10]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        GLCD_DisplayString(0,5,1, "Game Menu");
+                                  ^~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(14): warning: passing 'char [21]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        GLCD_DisplayString(8,0,1, "Joystick to Navigate");
+                                  ^~~~~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(15): warning: passing 'char [16]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        GLCD_DisplayString(9,0,1, "Right to Select");
+                                  ^~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(10): warning: no previous prototype for function 'game_page' [-Wmissing-prototypes]
+void game_page(){
+     ^
+game_menu.c(10): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void game_page(){
+^
+static 
+game_menu.c(29): error: use of undeclared identifier 'SystemCoreClock'
+        SysTick_Config(SystemCoreClock/100);
+                       ^
+game_menu.c(32): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+                        joystick_val = get_button();
+                                     ~ ^~~~~~~~~~~~
+game_menu.c(61): warning: passing 'char [20]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(4,0,1, "Start Brick Breaker");
+                                                                  ^~~~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(64): warning: passing 'char [18]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(5,0,1, "Start Flappy Bird");
+                                                                  ^~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(65): warning: passing 'char [15]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(6,0,1, "Return to Home");
+                                                                  ^~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(67): warning: passing 'char [20]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(4,0,1, "Start Brick Breaker");
+                                                                  ^~~~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(70): warning: passing 'char [18]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(5,0,1, "Start Flappy Bird");
+                                                                  ^~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(73): warning: passing 'char [15]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(6,0,1, "Return to Home");
+                                                                  ^~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(77): warning: passing 'char [20]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(4,0,1, "Start Brick Breaker");
+                                                                  ^~~~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(78): warning: passing 'char [18]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(5,0,1, "Start Flappy Bird");
+                                                                  ^~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(81): warning: passing 'char [15]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(6,0,1, "Return to Home");
+                                                                  ^~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(85): warning: passing 'char [20]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(4,0,1, "Start Brick Breaker");
+                                                                  ^~~~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(86): warning: passing 'char [18]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(5,0,1, "Start Flappy Bird");
+                                                                  ^~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(87): warning: passing 'char [15]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                        GLCD_DisplayString(6,0,1, "Return to Home");
+                                                                  ^~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+game_menu.c(18): warning: no previous prototype for function 'game_menu' [-Wmissing-prototypes]
+int game_menu(void){
+    ^
+game_menu.c(18): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int game_menu(void){
+^
+static 
+45 warnings and 1 error generated.
+compiling GLCD_SPI_LPC1700.c...
+GLCD_SPI_LPC1700.c(13): warning: non-portable path to file '<LPC17xx.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include <lpc17xx.h>
+         ^~~~~~~~~~~
+         <LPC17xx.h>
+GLCD_SPI_LPC1700.c(13): warning: In file included from...
+U:/coe718/project/common/inc\lpc17xx.h(104): warning: In file included from...
+U:/coe718/project/common/inc/core_cm3.h(1327): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+GLCD_SPI_LPC1700.c(13): warning: In file included from...
+U:/coe718/project/common/inc/LPC17xx.h(199): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(203): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(197): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(213): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(217): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(211): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(226): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(230): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(224): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(239): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(243): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(237): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(252): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(256): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(250): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(343): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(347): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(366): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(371): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(375): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(802): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(812): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(816): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+GLCD_SPI_LPC1700.c(15): warning: In file included from...
+./Font_6x8_h.h(19): warning: no previous extern declaration for non-static variable 'Font_6x8_h' [-Wmissing-variable-declarations]
+const unsigned char Font_6x8_h[] = {
+                    ^
+./Font_6x8_h.h(19): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const unsigned char Font_6x8_h[] = {
+      ^
+GLCD_SPI_LPC1700.c(16): warning: In file included from...
+./Font_16x24_h.h(19): warning: no previous extern declaration for non-static variable 'Font_16x24_h' [-Wmissing-variable-declarations]
+const unsigned short Font_16x24_h[] = {
+                     ^
+./Font_16x24_h.h(19): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const unsigned short Font_16x24_h[] = {
+      ^
+GLCD_SPI_LPC1700.c(116): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  if (mode == OUT) { DAT_MODE (OUT); }
+                     ^~~~~~~~~~~~~~
+GLCD_SPI_LPC1700.c(72): note: expanded from macro 'DAT_MODE'
+#define DAT_MODE(x) ((x == OUT) ? (LPC_GPIO0->FIODIR |= PIN_DAT) : (LPC_GPIO0->FIODIR &= ~PIN_DAT))
+                                                                                      ~~ ^~~~~~~~
+GLCD_SPI_LPC1700.c(117): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  else             { DAT_MODE (IN);  }
+                     ^~~~~~~~~~~~~
+GLCD_SPI_LPC1700.c(72): note: expanded from macro 'DAT_MODE'
+#define DAT_MODE(x) ((x == OUT) ? (LPC_GPIO0->FIODIR |= PIN_DAT) : (LPC_GPIO0->FIODIR &= ~PIN_DAT))
+                                                                                      ~~ ^~~~~~~~
+GLCD_SPI_LPC1700.c(145): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'unsigned char' [-Wimplicit-int-conversion]
+  return (LPC_SSP1->DR);
+  ~~~~~~  ~~~~~~~~~~^~
+GLCD_SPI_LPC1700.c(272): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  LPC_PINCON->PINSEL0  &= ~((3 << 18) | (3 << 16) | (3 << 14));
+                       ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GLCD_SPI_LPC1700.c(289): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  LPC_GPIO0->FIODIR    &= ~PIN_CLK;
+                       ~~ ^~~~~~~~
+GLCD_SPI_LPC1700.c(291): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  LPC_PINCON->PINMODE0 &= ~0x000FF000;
+                       ~~ ^~~~~~~~~~~
+GLCD_SPI_LPC1700.c(592): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x02, x  >>    8);           /* Column address start MSB           */
+    ~~~~~~       ~~~^~~~~~~
+GLCD_SPI_LPC1700.c(594): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x04, xe >>    8);           /* Column address end MSB             */
+    ~~~~~~       ~~~^~~~~~~
+GLCD_SPI_LPC1700.c(597): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x06, y  >>    8);           /* Row address start MSB              */
+    ~~~~~~       ~~~^~~~~~~
+GLCD_SPI_LPC1700.c(599): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x08, ye >>    8);           /* Row address end MSB                */
+    ~~~~~~       ~~~^~~~~~~
+GLCD_SPI_LPC1700.c(604): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x50, y);                    /* Vertical   GRAM Start Address      */
+    ~~~~~~       ^
+GLCD_SPI_LPC1700.c(605): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x51, y+h-1);                /* Vertical   GRAM End   Address (-1) */
+    ~~~~~~       ~~~^~
+GLCD_SPI_LPC1700.c(606): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x52, x);                    /* Horizontal GRAM Start Address      */
+    ~~~~~~       ^
+GLCD_SPI_LPC1700.c(607): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x53, x+w-1);                /* Horizontal GRAM End   Address (-1) */
+    ~~~~~~       ~~~^~
+GLCD_SPI_LPC1700.c(608): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x20, y);
+    ~~~~~~       ^
+GLCD_SPI_LPC1700.c(609): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x21, x);
+    ~~~~~~       ^
+GLCD_SPI_LPC1700.c(585): warning: no previous prototype for function 'GLCD_SetWindow' [-Wmissing-prototypes]
+void GLCD_SetWindow (unsigned int x, unsigned int y, unsigned int w, unsigned int h) {
+     ^
+GLCD_SPI_LPC1700.c(585): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GLCD_SetWindow (unsigned int x, unsigned int y, unsigned int w, unsigned int h) {
+^
+static 
+GLCD_SPI_LPC1700.c(643): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x02, x >>    8);            /* Column address start MSB           */
+    ~~~~~~       ~~^~~~~~~
+GLCD_SPI_LPC1700.c(645): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x04, x >>    8);            /* Column address end MSB             */
+    ~~~~~~       ~~^~~~~~~
+GLCD_SPI_LPC1700.c(648): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x06, y >>    8);            /* Row address start MSB              */
+    ~~~~~~       ~~^~~~~~~
+GLCD_SPI_LPC1700.c(650): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x08, y >>    8);            /* Row address end MSB                */
+    ~~~~~~       ~~^~~~~~~
+GLCD_SPI_LPC1700.c(655): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x20, y);
+    ~~~~~~       ^
+GLCD_SPI_LPC1700.c(656): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+    wr_reg(0x21, x);
+    ~~~~~~       ^
+GLCD_SPI_LPC1700.c(743): warning: cast from 'unsigned char *' to 'unsigned short *' increases required alignment from 1 to 2 [-Wcast-align]
+      pixs = *(unsigned short *)c;
+              ^~~~~~~~~~~~~~~~~~~
+GLCD_SPI_LPC1700.c(769): warning: cast from 'const unsigned char *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+      GLCD_DrawChar(col *  6, ln *  8,  6,  8, (unsigned char *)&Font_6x8_h  [c * 8]);
+                                                                ^
+GLCD_SPI_LPC1700.c(772): warning: cast from 'const unsigned short *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+      GLCD_DrawChar(col * 16, ln * 24, 16, 24, (unsigned char *)&Font_16x24_h[c * 24]);
+                                                                ^
+GLCD_SPI_LPC1700.c(839): warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+  for (i = 0; i < h; i++) {
+              ~ ^ ~
+GLCD_SPI_LPC1700.c(840): warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+    for (j = 0; j <= w-1; j++) {
+                ~ ^  ~~~
+GLCD_SPI_LPC1700.c(841): warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+      if(j >= val) {
+         ~ ^  ~~~
+GLCD_SPI_LPC1700.c(866): warning: cast from 'unsigned char *' to 'unsigned short *' increases required alignment from 1 to 2 [-Wcast-align]
+  unsigned short *bitmap_ptr = (unsigned short *)bitmap;
+                               ^~~~~~~~~~~~~~~~~~~~~~~~
+GLCD_SPI_LPC1700.c(872): warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  for (i = (h-1)*w; i > -1; i -= w) {
+         ~ ~~~~~^~
+GLCD_SPI_LPC1700.c(873): warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+    for (j = 0; j < w; j++) {
+                ~ ^ ~
+GLCD_SPI_LPC1700.c(913): warning: unused parameter 'dy' [-Wunused-parameter]
+void GLCD_ScrollVertical (unsigned int dy) {
+                                       ^
+61 warnings generated.
+compiling image.c...
+image.c(1): warning: non-portable path to file '<LPC17xx.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include <LPC17xx.H>
+         ^~~~~~~~~~~
+         <LPC17xx.h>
+image.c(1): warning: In file included from...
+U:/coe718/project/common/inc\LPC17xx.H(104): warning: In file included from...
+U:/coe718/project/common/inc/core_cm3.h(1327): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+image.c(1): warning: In file included from...
+U:/coe718/project/common/inc/LPC17xx.h(199): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(203): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(197): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(213): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(217): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(211): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(226): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(230): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(224): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(239): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(243): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(237): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(252): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(256): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(250): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(343): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(347): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(366): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(371): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(375): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(802): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(812): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(816): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+image.c(5): warning: In file included from...
+./KBD.h(17): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+image.c:7:10: fatal error: 'forest.c' file not found
+#include "forest.c"
+         ^~~~~~~~~~
+27 warnings and 1 error generated.
+compiling KBD.c...
+KBD.c(1): warning: non-portable path to file '<LPC17xx.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include <LPC17xx.H> /* LPC17xx definitions */
+         ^~~~~~~~~~~
+         <LPC17xx.h>
+KBD.c(1): warning: In file included from...
+U:/coe718/project/common/inc\LPC17xx.H(104): warning: In file included from...
+U:/coe718/project/common/inc/core_cm3.h(1327): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+KBD.c(1): warning: In file included from...
+U:/coe718/project/common/inc/LPC17xx.h(199): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(203): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(197): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(213): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(217): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(211): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(226): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(230): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(224): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(239): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(243): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(237): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(252): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(256): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(250): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(343): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(347): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(366): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(371): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(375): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(802): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(812): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(816): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+KBD.c(2): warning: In file included from...
+./KBD.h(17): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+KBD.c(10): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+LPC_PINCON->PINSEL3 &= ~((3<< 8)|(3<<14)|(3<<16)|(3<<18)|(3<<20));
+                    ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+KBD.c(12): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+LPC_GPIO1->FIODIR &= ~((1<<20)|(1<<23)|(1<<24)|(1<<25)|(1<<26));
+                  ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+KBD.c(30): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+30 warnings generated.
+compiling LED.c...
+LED.c(17): warning: In file included from...
+./LPC17xx.h(103): warning: In file included from...
+U:/coe718/project/common/inc\core_cm3.h(1327): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+LED.c(17): warning: In file included from...
+./LPC17xx.h(197): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(201): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(195): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(211): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(215): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(209): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(224): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(228): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(222): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(237): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(241): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(235): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(250): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(254): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+./LPC17xx.h(248): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(336): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(342): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(346): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(367): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(373): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(377): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(826): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(836): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+./LPC17xx.h(840): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+LED.c(20): warning: no previous extern declaration for non-static variable 'led_mask' [-Wmissing-variable-declarations]
+const unsigned long led_mask[] = { 1UL<<28, 1UL<<29, 1UL<<31, 1UL<< 2,
+                    ^
+LED.c(20): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const unsigned long led_mask[] = { 1UL<<28, 1UL<<29, 1UL<<31, 1UL<< 2,
+      ^
+LED.c(60): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+      LED_On (i);
+      ~~~~~~  ^
+LED.c(62): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+      LED_Off(i);
+      ~~~~~~~ ^
+28 warnings generated.
+compiling Main.c...
+Main.c(1): warning: non-portable path to file '<LPC17xx.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include <LPC17xx.H>
+         ^~~~~~~~~~~
+         <LPC17xx.h>
+Main.c(1): warning: In file included from...
+U:/coe718/project/common/inc\LPC17xx.H(104): warning: In file included from...
+U:/coe718/project/common/inc/core_cm3.h(1327): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+Main.c(1): warning: In file included from...
+U:/coe718/project/common/inc/LPC17xx.h(199): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(203): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(197): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(213): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(217): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(211): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(226): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(230): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(224): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(239): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(243): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(237): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(252): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(256): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(250): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(343): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(347): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(366): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(371): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(375): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(802): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(812): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(816): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+Main.c(5): warning: In file included from...
+./KBD.h(17): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+Main.c(16): warning: passing 'char [20]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        GLCD_DisplayString(0,0,1, "COE718 Media System");
+                                  ^~~~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(17): warning: passing 'char [10]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        GLCD_DisplayString(1,5,1, "Main Menu");
+                                  ^~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(18): warning: passing 'char [21]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        GLCD_DisplayString(8,0,1, "Joystick to navigate");
+                                  ^~~~~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(19): warning: passing 'char [18]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        GLCD_DisplayString(9,0,1, "Select with Right");
+                                  ^~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(13): warning: no previous prototype for function 'main_menu' [-Wmissing-prototypes]
+void main_menu(){
+     ^
+Main.c(13): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void main_menu(){
+^
+static 
+Main.c(34): error: use of undeclared identifier 'SystemCoreClock'
+        SysTick_Config(SystemCoreClock/100);
+                       ^
+Main.c(37): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+        joystick_val = get_button();
+                     ~ ^~~~~~~~~~~~
+Main.c(65): warning: passing 'char [18]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        GLCD_DisplayString(4,0,1, "    Photo Gallery");
+                                                  ^~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(68): warning: passing 'char [17]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        GLCD_DisplayString(5,0,1, "    Audio Player");
+                                                  ^~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(69): warning: passing 'char [14]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        GLCD_DisplayString(6,0,1, "    Game Menu");
+                                                  ^~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(72): warning: passing 'char [18]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        GLCD_DisplayString(4,0,1, "    Photo Gallery");
+                                                  ^~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(75): warning: passing 'char [17]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        GLCD_DisplayString(5,0,1, "    Audio Player");
+                                                  ^~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(78): warning: passing 'char [14]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        GLCD_DisplayString(6,0,1, "    Game Menu");
+                                                  ^~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(83): warning: passing 'char [18]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        GLCD_DisplayString(4,0,1, "    Photo Gallery");
+                                                  ^~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(84): warning: passing 'char [17]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        GLCD_DisplayString(5,0,1, "    Audio Player");
+                                                  ^~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(87): warning: passing 'char [14]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        GLCD_DisplayString(6,0,1, "    Game Menu");
+                                                  ^~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(92): warning: passing 'char [18]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        GLCD_DisplayString(4,0,1, "    Photo Gallery");
+                                                  ^~~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(93): warning: passing 'char [17]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        GLCD_DisplayString(5,0,1, "    Audio Player");
+                                                  ^~~~~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+Main.c(94): warning: passing 'char [14]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        GLCD_DisplayString(6,0,1, "    Game Menu");
+                                                  ^~~~~~~~~~~~~~~
+./GLCD.h(50): note: passing argument to parameter 's' here
+extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
+                                                                                                     ^
+45 warnings and 1 error generated.
+compiling photo_gallery.c...
+photo_gallery.c(1): warning: non-portable path to file '<LPC17xx.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include <LPC17xx.H>
+         ^~~~~~~~~~~
+         <LPC17xx.h>
+photo_gallery.c(1): warning: In file included from...
+U:/coe718/project/common/inc\LPC17xx.H(104): warning: In file included from...
+U:/coe718/project/common/inc/core_cm3.h(1327): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+photo_gallery.c(1): warning: In file included from...
+U:/coe718/project/common/inc/LPC17xx.h(199): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(203): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(197): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(213): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(217): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(211): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(226): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(230): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(224): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(239): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(243): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(237): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(252): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(256): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct {
+    ^
+U:/coe718/project/common/inc/LPC17xx.h(250): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(343): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(347): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(366): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(371): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(375): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(802): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(812): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+U:/coe718/project/common/inc/LPC17xx.h(816): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+photo_gallery.c(5): warning: In file included from...
+./KBD.h(17): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+photo_gallery.c:7:10: fatal error: 'forest.c' file not found
+#include "forest.c"
+         ^~~~~~~~~~
+27 warnings and 1 error generated.
+compiling ARM_Ani_16bpp.c...
+../LCD_Blinky/ARM_Ani_16bpp.c(1): warning: no previous extern declaration for non-static variable 'ARM_Ani_16bpp' [-Wmissing-variable-declarations]
+const unsigned char ARM_Ani_16bpp[] = {
+                    ^
+../LCD_Blinky/ARM_Ani_16bpp.c(1): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const unsigned char ARM_Ani_16bpp[] = {
+      ^
+1 warning generated.
+compiling Bg_16bpp_l.c...
+../LCD_Blinky/Bg_16bpp_l.c(1): warning: no previous extern declaration for non-static variable 'Bg_16bpp_l' [-Wmissing-variable-declarations]
+unsigned char Bg_16bpp_l[] = {
+              ^
+../LCD_Blinky/Bg_16bpp_l.c(1): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned char Bg_16bpp_l[] = {
+^
+1 warning generated.
+compiling Bg_16bpp_r.c...
+../LCD_Blinky/Bg_16bpp_r.c(1): warning: no previous extern declaration for non-static variable 'Bg_16bpp_r' [-Wmissing-variable-declarations]
+const unsigned char Bg_16bpp_r[] = {
+                    ^
+../LCD_Blinky/Bg_16bpp_r.c(1): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const unsigned char Bg_16bpp_r[] = {
+      ^
+1 warning generated.
+compiling core_cm3.c...
+../LCD_Blinky/core_cm3.c(462): error: non-ASM statement in naked function is not supported
+  uint32_t result=0;
+  ^
+../LCD_Blinky/core_cm3.c(459): note: attribute is here
+uint32_t __get_PSP(void) __attribute__( ( naked ) );
+                                          ^
+../LCD_Blinky/core_cm3.c(484): error: parameter references not allowed in naked functions
+                  "BX  lr     \n\t" : : "r" (topOfProcStack) );
+                                             ^
+../LCD_Blinky/core_cm3.c(480): note: attribute is here
+void __set_PSP(uint32_t topOfProcStack) __attribute__( ( naked ) );
+                                                         ^
+../LCD_Blinky/core_cm3.c(499): error: non-ASM statement in naked function is not supported
+  uint32_t result=0;
+  ^
+../LCD_Blinky/core_cm3.c(496): note: attribute is here
+uint32_t __get_MSP(void) __attribute__( ( naked ) );
+                                          ^
+../LCD_Blinky/core_cm3.c(520): error: parameter references not allowed in naked functions
+                  "BX  lr     \n\t" : : "r" (topOfMainStack) );
+                                             ^
+../LCD_Blinky/core_cm3.c(516): note: attribute is here
+void __set_MSP(uint32_t topOfMainStack) __attribute__( ( naked ) );
+                                                         ^
+../LCD_Blinky/core_cm3.c(531): warning: no previous prototype for function '__get_BASEPRI' [-Wmissing-prototypes]
+uint32_t __get_BASEPRI(void)
+         ^
+../LCD_Blinky/core_cm3.c(531): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __get_BASEPRI(void)
+^
+static 
+../LCD_Blinky/core_cm3.c(547): warning: no previous prototype for function '__set_BASEPRI' [-Wmissing-prototypes]
+void __set_BASEPRI(uint32_t value)
+     ^
+../LCD_Blinky/core_cm3.c(547): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void __set_BASEPRI(uint32_t value)
+^
+static 
+../LCD_Blinky/core_cm3.c(561): warning: no previous prototype for function '__get_PRIMASK' [-Wmissing-prototypes]
+uint32_t __get_PRIMASK(void)
+         ^
+../LCD_Blinky/core_cm3.c(561): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __get_PRIMASK(void)
+^
+static 
+../LCD_Blinky/core_cm3.c(577): warning: no previous prototype for function '__set_PRIMASK' [-Wmissing-prototypes]
+void __set_PRIMASK(uint32_t priMask)
+     ^
+../LCD_Blinky/core_cm3.c(577): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void __set_PRIMASK(uint32_t priMask)
+^
+static 
+../LCD_Blinky/core_cm3.c(590): warning: no previous prototype for function '__get_FAULTMASK' [-Wmissing-prototypes]
+uint32_t __get_FAULTMASK(void)
+         ^
+../LCD_Blinky/core_cm3.c(590): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __get_FAULTMASK(void)
+^
+static 
+../LCD_Blinky/core_cm3.c(606): warning: no previous prototype for function '__set_FAULTMASK' [-Wmissing-prototypes]
+void __set_FAULTMASK(uint32_t faultMask)
+     ^
+../LCD_Blinky/core_cm3.c(606): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void __set_FAULTMASK(uint32_t faultMask)
+^
+static 
+../LCD_Blinky/core_cm3.c(619): warning: no previous prototype for function '__REV' [-Wmissing-prototypes]
+uint32_t __REV(uint32_t value)
+         ^
+../LCD_Blinky/core_cm3.c(619): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __REV(uint32_t value)
+^
+static 
+../LCD_Blinky/core_cm3.c(635): warning: no previous prototype for function '__REV16' [-Wmissing-prototypes]
+uint32_t __REV16(uint16_t value)
+         ^
+../LCD_Blinky/core_cm3.c(635): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __REV16(uint16_t value)
+^
+static 
+../LCD_Blinky/core_cm3.c(656): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../LCD_Blinky/core_cm3.c(651): warning: no previous prototype for function '__REVSH' [-Wmissing-prototypes]
+int32_t __REVSH(int16_t value)
+        ^
+../LCD_Blinky/core_cm3.c(651): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int32_t __REVSH(int16_t value)
+^
+static 
+../LCD_Blinky/core_cm3.c(667): warning: no previous prototype for function '__RBIT' [-Wmissing-prototypes]
+uint32_t __RBIT(uint32_t value)
+         ^
+../LCD_Blinky/core_cm3.c(667): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __RBIT(uint32_t value)
+^
+static 
+../LCD_Blinky/core_cm3.c(683): warning: no previous prototype for function '__LDREXB' [-Wmissing-prototypes]
+uint8_t __LDREXB(uint8_t *addr)
+        ^
+../LCD_Blinky/core_cm3.c(683): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint8_t __LDREXB(uint8_t *addr)
+^
+static 
+../LCD_Blinky/core_cm3.c(699): warning: no previous prototype for function '__LDREXH' [-Wmissing-prototypes]
+uint16_t __LDREXH(uint16_t *addr)
+         ^
+../LCD_Blinky/core_cm3.c(699): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint16_t __LDREXH(uint16_t *addr)
+^
+static 
+../LCD_Blinky/core_cm3.c(715): warning: no previous prototype for function '__LDREXW' [-Wmissing-prototypes]
+uint32_t __LDREXW(uint32_t *addr)
+         ^
+../LCD_Blinky/core_cm3.c(715): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __LDREXW(uint32_t *addr)
+^
+static 
+../LCD_Blinky/core_cm3.c(732): warning: no previous prototype for function '__STREXB' [-Wmissing-prototypes]
+uint32_t __STREXB(uint8_t value, uint8_t *addr)
+         ^
+../LCD_Blinky/core_cm3.c(732): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __STREXB(uint8_t value, uint8_t *addr)
+^
+static 
+../LCD_Blinky/core_cm3.c(749): warning: no previous prototype for function '__STREXH' [-Wmissing-prototypes]
+uint32_t __STREXH(uint16_t value, uint16_t *addr)
+         ^
+../LCD_Blinky/core_cm3.c(749): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __STREXH(uint16_t value, uint16_t *addr)
+^
+static 
+../LCD_Blinky/core_cm3.c(766): warning: no previous prototype for function '__STREXW' [-Wmissing-prototypes]
+uint32_t __STREXW(uint32_t value, uint32_t *addr)
+         ^
+../LCD_Blinky/core_cm3.c(766): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __STREXW(uint32_t value, uint32_t *addr)
+^
+static 
+../LCD_Blinky/core_cm3.c(782): warning: no previous prototype for function '__get_CONTROL' [-Wmissing-prototypes]
+uint32_t __get_CONTROL(void)
+         ^
+../LCD_Blinky/core_cm3.c(782): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __get_CONTROL(void)
+^
+static 
+../LCD_Blinky/core_cm3.c(798): warning: no previous prototype for function '__set_CONTROL' [-Wmissing-prototypes]
+void __set_CONTROL(uint32_t control)
+     ^
+../LCD_Blinky/core_cm3.c(798): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void __set_CONTROL(uint32_t control)
+^
+static 
+19 warnings and 4 errors generated.
+compiling Bg_16bpp_t.c...
+../LCD_Blinky/Bg_16bpp_t.c(1): warning: no previous extern declaration for non-static variable 'Bg_16bpp_t' [-Wmissing-variable-declarations]
+const unsigned char Bg_16bpp_t[] = {
+                    ^
+../LCD_Blinky/Bg_16bpp_t.c(1): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const unsigned char Bg_16bpp_t[] = {
+      ^
+1 warning generated.
+compiling IRQ.c...
+../LCD_Blinky/IRQ.c(12): warning: no previous extern declaration for non-static variable 'ticks' [-Wmissing-variable-declarations]
+unsigned long ticks = 0;
+              ^
+../LCD_Blinky/IRQ.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned long ticks = 0;
+^
+../LCD_Blinky/IRQ.c(18): warning: no previous prototype for function 'SysTick_Handler' [-Wmissing-prototypes]
+void SysTick_Handler (void) {           /* SysTick Interrupt Handler (10ms)   */
+     ^
+../LCD_Blinky/IRQ.c(18): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SysTick_Handler (void) {           /* SysTick Interrupt Handler (10ms)   */
+^
+static 
+../LCD_Blinky/IRQ.c(40): warning: unannotated fall-through between switch labels [-Wimplicit-fallthrough]
+    default:
+    ^
+../LCD_Blinky/IRQ.c(40): note: insert 'break;' to avoid fall-through
+    default:
+    ^
+    break; 
+../LCD_Blinky/IRQ.c(13): warning: no previous extern declaration for non-static variable 'ClockLEDOn' [-Wmissing-variable-declarations]
+unsigned char ClockLEDOn;               /* On for 30 ms every 50 ms           */
+              ^
+../LCD_Blinky/IRQ.c(13): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned char ClockLEDOn;               /* On for 30 ms every 50 ms           */
+^
+../LCD_Blinky/IRQ.c(14): warning: no previous extern declaration for non-static variable 'ClockLEDOff' [-Wmissing-variable-declarations]
+unsigned char ClockLEDOff;              /* On for 20 ms every 50 ms           */
+              ^
+../LCD_Blinky/IRQ.c(14): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned char ClockLEDOff;              /* On for 20 ms every 50 ms           */
+^
+../LCD_Blinky/IRQ.c(15): warning: no previous extern declaration for non-static variable 'ClockANI' [-Wmissing-variable-declarations]
+unsigned char ClockANI;                 /* Clock for Animation 150 ms         */
+              ^
+../LCD_Blinky/IRQ.c(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned char ClockANI;                 /* Clock for Animation 150 ms         */
+^
+6 warnings generated.
+".\Objects\MediaProject.axf" - 7 Error(s), 477 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.LPC1700_DFP.2.6.0.pack
+                Keil.LPC1700_DFP.2.6.0
+                NXP LPC1700 Series Device Support, Drivers and Examples for MCB1700 and LPC1788-32
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.MDK-Middleware.7.12.0.pack
+                Keil.MDK-Middleware.7.12.0
+                Middleware for Keil MDK-Professional and MDK-Plus
+   * Component: Joystick Version: 1.0.0
+   * Component: LED Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\ECBME\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\ECBME\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Board Support:Joystick:1.0.0 (API)
+
+   * Component: ::Board Support:LED:1.0.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Target not created.
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>

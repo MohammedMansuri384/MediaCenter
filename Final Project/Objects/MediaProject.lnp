@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+".\objects\system_lpc17xx.o"
+".\objects\brick_breaker.o"
+".\objects\flappy_bird.o"
+".\objects\game_menu.o"
+".\objects\glcd_spi_lpc1700.o"
+".\objects\image.o"
+".\objects\kbd.o"
+".\objects\led.o"
+".\objects\main.o"
+".\objects\photo_gallery.o"
+".\objects\forest.o"
+".\objects\hill.o"
+".\objects\lake.o"
+".\objects\reef.o"
+".\objects\joystick_mcb1700.o"
+".\objects\led_mcb1700.o"
+".\objects\gpio_lpc17xx.o"
+".\objects\pin_lpc17xx.o"
+--strict --scatter ".\Objects\MediaProject.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\MediaProject.map" -o .\Objects\MediaProject.axf

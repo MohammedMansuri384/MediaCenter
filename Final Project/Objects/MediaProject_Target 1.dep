@@ -1,0 +1,94 @@
+Dependencies for Project 'MediaProject', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6140000::V6.14::ARMCLANG
+F (.\LPC17xx.h)(0x4F47CD02)()
+F (.\system_LPC17xx.c)(0x537CB372)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/system_lpc17xx.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED6B4A4)
+I (LPC17xx.h)(0x4F47CD02)
+I (U:\coe718\project\common\inc\core_cm3.h)(0x4D250C6C)
+I (U:\coe718\project\common\inc\system_LPC17xx.h)(0x537CB1A8)
+I (U:\coe718\project\common\inc\LPC17xx.h)(0x537C1E0A)
+F (.\brick_breaker.c)(0x6917725C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/brick_breaker.o -MD)
+I (U:\coe718\project\common\inc\LPC17xx.H)(0x537C1E0A)
+I (U:\coe718\project\common\inc\core_cm3.h)(0x4D250C6C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED6B4A4)
+I (U:\coe718\project\common\inc\system_LPC17xx.h)(0x537CB1A8)
+I (GLCD.h)(0x6913E05F)
+I (KBD.h)(0x6916339D)
+F (.\flappy_bird.c)(0x6917742A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/flappy_bird.o -MD)
+I (U:\coe718\project\common\inc\LPC17xx.H)(0x537C1E0A)
+I (U:\coe718\project\common\inc\core_cm3.h)(0x4D250C6C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED6B4A4)
+I (U:\coe718\project\common\inc\system_LPC17xx.h)(0x537CB1A8)
+I (GLCD.h)(0x6913E05F)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED6B4A4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5ED6B4A4)
+I (KBD.h)(0x6916339D)
+F (.\game_menu.c)(0x6919EDCB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/game_menu.o -MD)
+I (U:\coe718\project\common\inc\LPC17xx.H)(0x537C1E0A)
+I (U:\coe718\project\common\inc\core_cm3.h)(0x4D250C6C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED6B4A4)
+I (U:\coe718\project\common\inc\system_LPC17xx.h)(0x537CB1A8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED6B4A4)
+I (GLCD.h)(0x6913E05F)
+I (LED.h)(0x631E5620)
+I (KBD.h)(0x6916339D)
+F (.\GLCD_SPI_LPC1700.c)(0x6913DFEC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/glcd_spi_lpc1700.o -MD)
+I (U:\coe718\project\common\inc\lpc17xx.h)(0x537C1E0A)
+I (U:\coe718\project\common\inc\core_cm3.h)(0x4D250C6C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED6B4A4)
+I (U:\coe718\project\common\inc\system_LPC17xx.h)(0x537CB1A8)
+I (GLCD.h)(0x6913E05F)
+I (Font_6x8_h.h)(0x631E5620)
+I (Font_16x24_h.h)(0x631E5620)
+F (.\image.c)(0x6918F13F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/image.o -MD)
+I (U:\coe718\project\common\inc\LPC17xx.H)(0x537C1E0A)
+I (U:\coe718\project\common\inc\core_cm3.h)(0x4D250C6C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED6B4A4)
+I (U:\coe718\project\common\inc\system_LPC17xx.h)(0x537CB1A8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED6B4A4)
+I (GLCD.h)(0x6913E05F)
+I (LED.h)(0x631E5620)
+I (KBD.h)(0x6916339D)
+F (.\KBD.c)(0x68C32338)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/kbd.o -MD)
+I (U:\coe718\project\common\inc\LPC17xx.H)(0x537C1E0A)
+I (U:\coe718\project\common\inc\core_cm3.h)(0x4D250C6C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED6B4A4)
+I (U:\coe718\project\common\inc\system_LPC17xx.h)(0x537CB1A8)
+I (KBD.h)(0x6916339D)
+F (.\LED.c)(0x631E5620)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/led.o -MD)
+I (LPC17xx.h)(0x4F47CD02)
+I (U:\coe718\project\common\inc\core_cm3.h)(0x4D250C6C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED6B4A4)
+I (U:\coe718\project\common\inc\system_LPC17xx.h)(0x537CB1A8)
+I (U:\coe718\project\common\inc\LPC17xx.h)(0x537C1E0A)
+I (LED.h)(0x631E5620)
+F (.\Main.c)(0x6919ECDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/main.o -MD)
+I (U:\coe718\project\common\inc\LPC17xx.H)(0x537C1E0A)
+I (U:\coe718\project\common\inc\core_cm3.h)(0x4D250C6C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED6B4A4)
+I (U:\coe718\project\common\inc\system_LPC17xx.h)(0x537CB1A8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED6B4A4)
+I (GLCD.h)(0x6913E05F)
+I (LED.h)(0x631E5620)
+I (KBD.h)(0x6916339D)
+F (.\photo_gallery.c)(0x6919ECC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/photo_gallery.o -MD)
+I (U:\coe718\project\common\inc\LPC17xx.H)(0x537C1E0A)
+I (U:\coe718\project\common\inc\core_cm3.h)(0x4D250C6C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED6B4A4)
+I (U:\coe718\project\common\inc\system_LPC17xx.h)(0x537CB1A8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED6B4A4)
+I (GLCD.h)(0x6913E05F)
+I (LED.h)(0x631E5620)
+I (KBD.h)(0x6916339D)
+F (.\LED.h)(0x631E5620)()
+F (.\KBD.h)(0x6916339D)()
+F (.\GLCD.h)(0x6913E05F)()
+F (.\Font_6x8_h.h)(0x631E5620)()
+F (.\Font_16x24_h.h)(0x631E5620)()
+F (..\LCD_Blinky\ARM_Ani_16bpp.c)(0x4BB24908)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/arm_ani_16bpp.o -MD)
+F (..\LCD_Blinky\Bg_16bpp_l.c)(0x4BB24908)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/bg_16bpp_l.o -MD)
+F (..\LCD_Blinky\Bg_16bpp_r.c)(0x4BB24908)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/bg_16bpp_r.o -MD)
+F (..\LCD_Blinky\core_cm3.c)(0x4BB24908)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/core_cm3.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED6B4A4)
+F (..\LCD_Blinky\Bg_16bpp_t.c)(0x4BB24908)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/bg_16bpp_t.o -MD)
+F (..\LCD_Blinky\IRQ.c)(0x4BB24908)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I U:/coe718/project/common/inc-I./RTE/_Target_1-IC:/Users/ECBME/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ECBME/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.6.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DLPC175x_6x -D_RTE_-o ./objects/irq.o -MD)
