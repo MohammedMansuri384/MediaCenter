@@ -1,0 +1,1 @@
+Built a media interface on an MCB1700 board. It reads bitmaps from its built in storage and displays them. Joystick let you navigate through menus and select images. The UI is all done in System C. Also coded brick breaker and flappy bird clones onto the board as well as USB audio player
